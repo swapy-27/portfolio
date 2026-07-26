@@ -124,19 +124,19 @@ function buildIndexHtml(posts) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blog — Swapnil Dahiphale</title>
-<meta name="description" content="Thoughts on SRE, AI engineering, and building OpenSRE." />
+    <title>Blog — Swapnil Jain</title>
+<meta name="description" content="Thoughts by Swapnil Jain on distributed systems, streaming, big data, agentic AI, and cloud platforms." />
 <link rel="canonical" href="${SITE_URL}/blog" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="${SITE_URL}/blog" />
-<meta property="og:title" content="Blog — Swapnil Dahiphale" />
-<meta property="og:description" content="Thoughts on SRE, AI engineering, and building OpenSRE." />
-<meta property="og:image" content="${SITE_URL}/og-image.png" />
+<meta property="og:title" content="Blog — Swapnil Jain" />
+<meta property="og:description" content="Thoughts by Swapnil Jain on distributed systems, streaming, big data, agentic AI, and cloud platforms." />
+<meta property="og:image" content="${SITE_URL}/og-image.svg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Blog — Swapnil Dahiphale" />
-<meta name="twitter:description" content="Thoughts on SRE, AI engineering, and building OpenSRE." />
-<meta name="twitter:image" content="${SITE_URL}/og-image.png" />
-<link rel="icon" type="image/png" href="/favicon.png" />
+<meta name="twitter:title" content="Blog — Swapnil Jain" />
+<meta name="twitter:description" content="Thoughts by Swapnil Jain on distributed systems, streaming, big data, agentic AI, and cloud platforms." />
+<meta name="twitter:image" content="${SITE_URL}/og-image.svg" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <style>${sharedStyles}</style>
 </head>
 <body>
@@ -144,7 +144,7 @@ function buildIndexHtml(posts) {
   <a class="back-link" href="${SITE_URL}/">&larr; Back to Portfolio</a>
   <header class="page-header">
     <h1>Blog</h1>
-    <p>Thoughts on SRE, AI engineering, and building OpenSRE.</p>
+    <p>Thoughts on distributed systems, streaming, big data, agentic AI, and cloud platforms.</p>
   </header>
   <section>${cards}</section>
 </main>
@@ -170,8 +170,8 @@ function buildPostHtml(post) {
     url,
     wordCount,
     articleBody: plain.slice(0, 500),
-    author: { "@type": "Person", name: "Swapnil Dahiphale", url: SITE_URL },
-    publisher: { "@type": "Person", name: "Swapnil Dahiphale" },
+    author: { "@type": "Person", name: "Swapnil Jain", url: SITE_URL },
+    publisher: { "@type": "Person", name: "Swapnil Jain" },
     mainEntityOfPage: url,
   };
 
@@ -180,20 +180,20 @@ function buildPostHtml(post) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>${escapeHtml(post.title)} — Swapnil Dahiphale</title>
+<title>${escapeHtml(post.title)} — Swapnil Jain</title>
 <meta name="description" content="${escapeHtml(post.description)}" />
 <link rel="canonical" href="${url}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="${url}" />
 <meta property="og:title" content="${escapeHtml(post.title)}" />
 <meta property="og:description" content="${escapeHtml(post.description)}" />
-<meta property="og:image" content="${SITE_URL}/og-image.png" />
+<meta property="og:image" content="${SITE_URL}/og-image.svg" />
 <meta property="article:published_time" content="${post.date}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${escapeHtml(post.title)}" />
 <meta name="twitter:description" content="${escapeHtml(post.description)}" />
-<meta name="twitter:image" content="${SITE_URL}/og-image.png" />
-<link rel="icon" type="image/png" href="/favicon.png" />
+<meta name="twitter:image" content="${SITE_URL}/og-image.svg" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 <style>${sharedStyles}</style>
 </head>
