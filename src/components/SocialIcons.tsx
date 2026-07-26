@@ -1,8 +1,4 @@
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
@@ -61,7 +57,7 @@ const SocialIcons = () => {
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
           <a
-            href="https://github.com/swapnildahiphale"
+            href="https://github.com/swapy-27"
             target="_blank"
             rel="noreferrer"
           >
@@ -70,7 +66,7 @@ const SocialIcons = () => {
         </span>
         <span>
           <a
-            href="https://www.linkedin.com/in/swapnil2233/"
+            href="https://www.linkedin.com/in/swapnijain27012000/"
             target="_blank"
             rel="noreferrer"
           >
@@ -79,16 +75,16 @@ const SocialIcons = () => {
         </span>
         <span>
           <a
-            href="https://www.youtube.com/@Bit-Savvy"
+            href="mailto:swapniljain240@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <FaYoutube />
+            <MdEmail />
           </a>
         </span>
         <span>
           <a
-            href="mailto:swapnil2233@yahoo.com"
+            href="mailto:swapniljain240@gmail.com"
           >
             <MdEmail />
           </a>
@@ -96,7 +92,7 @@ const SocialIcons = () => {
       </div>
       <a
         className="resume-button"
-        href="/Swapnil-Dahiphale-Resume-April-2025.pdf"
+        href="/Swapnil-Jain-Resume.pdf"
         target="_blank"
         rel="noreferrer"
       >

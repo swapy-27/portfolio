@@ -11,23 +11,23 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="https://www.linkedin.com/in/swapnil2233/"
+                href="https://www.linkedin.com/in/swapnijain27012000/"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"
               >
-                LinkedIn — swapnil2233
+                LinkedIn — Swapnil Jain
               </a>
             </p>
             <h4>Education</h4>
             <p>
-              B.E. Computer Science, Pune University — 2014
+              B.Tech in Engineering, RGPV University
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/swapnildahiphale"
+              href="https://github.com/swapy-27"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -36,7 +36,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/swapnil2233/"
+              href="https://www.linkedin.com/in/swapnijain27012000/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -45,25 +45,25 @@ const Contact = () => {
               LinkedIn <MdArrowOutward />
             </a>
             <a
-              href="https://www.youtube.com/@Bit-Savvy"
+              href="mailto:swapniljain240@gmail.com"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              YouTube <MdArrowOutward />
+              Email <MdArrowOutward />
             </a>
             <a
-              href="mailto:swapnil2233@yahoo.com"
+              href="tel:+917440577012"
               data-cursor="disable"
               className="contact-social"
             >
-              Email <MdArrowOutward />
+              Phone <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Swapnil Dahiphale</span>
+              Designed and Developed <br /> by <span>Swapnil Jain</span>
             </h2>
             <h5>
               <MdCopyright /> 2026

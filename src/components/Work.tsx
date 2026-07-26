@@ -38,31 +38,29 @@ const Work = () => {
                 <div className="carousel-content">
                   <div className="carousel-info">
                     <div className="carousel-details">
-                      <h4>OpenSRE</h4>
-                      <p className="carousel-category">Agentic AI / SRE</p>
+                      <h4>AI Infrastructure Cost Optimizer</h4>
+                      <p className="carousel-category">AI Infrastructure / Cloud Cost</p>
                       <p className="carousel-description">
-                        An open-source autonomous AI platform that investigates
-                        production incidents end-to-end. Multi-agent
-                        orchestration powered by LangGraph, knowledge graphs on
-                        Neo4j, and 46 built-in investigation skills — from log
-                        analysis to root cause identification — so on-call
-                        engineers get answers, not alerts.
+                        An AI-assisted platform integrated with Bitbucket pull
+                        requests to analyze Terraform changes, recommend cloud
+                        cost optimizations, and surface engineering best
+                        practices before infrastructure reaches production.
                       </p>
                       <div className="carousel-tools">
                         <span className="tools-label">Tools & Stack</span>
                         <p>
-                          LangGraph, Neo4j, RAG, Python, Multi-Agent, Knowledge
-                          Graph
+                          Python, Terraform, AWS, Bitbucket, LLMs, Cloud Cost
+                          Optimization
                         </p>
                       </div>
                       <a
-                        href="https://opensre.in"
+                        href="#work"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="carousel-link"
                         data-cursor="disable"
                       >
-                        Visit opensre.in →
+                        Explore the project →
                       </a>
                     </div>
                   </div>
@@ -74,7 +72,7 @@ const Work = () => {
                     >
                       <img
                         src="/videos/thumbnail.webp"
-                        alt="OpenSRE demo"
+                        alt="AI Infrastructure Cost Optimizer project preview"
                         className="video-card-thumb"
                       />
                       <div className="video-card-overlay" />
@@ -90,7 +88,7 @@ const Work = () => {
                       </div>
                       <div className="video-card-text">
                         <p className="video-card-title">
-                          See OpenSRE in action
+                          View the project concept
                         </p>
                         <p className="video-card-desc">
                           Watch a full incident investigation in 60 seconds

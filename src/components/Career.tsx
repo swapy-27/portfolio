@@ -15,72 +15,44 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Staff SRE</h4>
-                <h5>VMO India Private Limited</h5>
+                <h4>Software Engineer II</h4>
+                <h5>JPMorgan Chase</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2025–NOW</h3>
             </div>
             <ul>
-              <li>Led Call-AI acquisition, containerized services with bespoke CI/CD</li>
-              <li>Architected dynamic environment provisioning for Health Exchange SaaS</li>
-              <li>Building voice AI agent infrastructure & agentic AI systems</li>
+              <li>Built high-throughput recommendation and personalization platforms serving 70 million Chase customers</li>
+              <li>Developed distributed streaming and big-data processing pipelines with Flink, Kafka, Spark, and EMR</li>
+              <li>Built agentic AI systems with Ray-based model serving and incident triage agents</li>
+              <li>Led multi-region migration and built cloud infrastructure with AWS, Terraform, and Kubernetes</li>
             </ul>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Staff SRE</h4>
-                <h5>Mobile Premier League (MPL)</h5>
+                <h4>Senior Software Engineer</h4>
+                <h5>Wells Fargo</h5>
               </div>
-              <h3>2019–23</h3>
+              <h3>2024–NOW</h3>
             </div>
             <ul>
-              <li>Migrated 100+ microservices to Kubernetes with Istio Service Mesh</li>
-              <li>HA AWS infrastructure for India's largest gaming platform (100M+ users)</li>
-              <li>ELK log management handling 10+ TB daily; Terraform + Atlantis IaC</li>
-              <li>Observability with Prometheus, Thanos & Grafana</li>
+              <li>Delivered the Managed Rates Engine for Wells Fargo's Enhanced Deposits Global Program in 11 weeks with zero defects</li>
+              <li>Built EuclidPro, a configurable platform for workflow-driven API, messaging, and scheduled-job integrations</li>
+              <li>Integrated Kafka, IBM MQ, and Hazelcast across scalable Kubernetes deployments on Azure</li>
             </ul>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Founding Member &amp; DevOps Lead</h4>
-                <h5>Crevise Technologies (Acquired by MPL)</h5>
+                <h4>Software Engineer</h4>
+                <h5>HSBC</h5>
               </div>
-              <h3>2016–19</h3>
+              <h3>2021–24</h3>
             </div>
             <ul>
-              <li>Designed HA, scalable AWS architectures from the ground up</li>
-              <li>CI pipelines with Jenkins; infrastructure automation with Chef</li>
-              <li>Monitoring & logging with DataDog and Loggly</li>
-            </ul>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>DevOps Engineer</h4>
-                <h5>Whitehedge Technologies</h5>
-              </div>
-              <h3>2015–16</h3>
-            </div>
-            <ul>
-              <li>Led cloud migration for Cathay Pacific as project lead & Ansible developer</li>
-              <li>Containerized microservices with Docker & Kubernetes</li>
-              <li>Integrated automated tests into CI pipeline with DroneCI</li>
-            </ul>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>DevOps Engineer</h4>
-                <h5>Webonise Labs (Haptiq)</h5>
-              </div>
-              <h3>2014–15</h3>
-            </div>
-            <ul>
-              <li>Managed Linux servers; automated deployments with Webistrano & Capistrano</li>
-              <li>Multi-stack deployments across ROR, Django, NodeJS & Tomcat</li>
-              <li>LDAP auth, automated backups & Nagios monitoring</li>
+              <li>Migrated legacy payment systems to a scalable, maintainable microservices architecture</li>
+              <li>Developed Apache Camel integration services for message transformation, routing, and validation</li>
+              <li>Built reusable integration frameworks supporting Kafka, IBM MQ, and REST APIs</li>
             </ul>
           </div>
         </div>

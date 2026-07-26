@@ -9,7 +9,7 @@ const SITE_URL = "https://swapnil.one";
 const SOCIAL = {
   linkedin: "https://www.linkedin.com/in/swapnil2233/",
   x: "https://x.com/Swapnil2233",
-  github: "https://github.com/swapnildahiphale/",
+  github: "https://github.com/swapy-27",
   opensre: "https://opensre.in",
 };
 

@@ -10,14 +10,16 @@ const Loading = ({ percent }: { percent: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
 
-  if (percent >= 100) {
-    setTimeout(() => {
+  useEffect(() => {
+    if (percent < 100) return;
+
+    const loadedTimer = window.setTimeout(() => {
       setLoaded(true);
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 1000);
+      window.setTimeout(() => setIsLoaded(true), 1000);
     }, 600);
-  }
+
+    return () => window.clearTimeout(loadedTimer);
+  }, [percent]);
 
   useEffect(() => {
     import("./utils/initialFX").then((module) => {
@@ -46,7 +48,7 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          SD
+          SJ
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
@@ -60,10 +62,14 @@ const Loading = ({ percent }: { percent: number }) => {
         </div>
       </div>
       <div className="loading-screen">
+        <div className="loading-grid" aria-hidden="true"></div>
+        <div className="loading-orbit loading-orbit-one" aria-hidden="true"></div>
+        <div className="loading-orbit loading-orbit-two" aria-hidden="true"></div>
+        <div className="loading-kicker">SYSTEM INITIALIZATION / SJ-01</div>
         <div className="loading-marquee">
           <Marquee>
-            <span> Swapnil Dahiphale</span> <span>Swapnil Dahiphale</span>
-            <span> Swapnil Dahiphale</span> <span>Swapnil Dahiphale</span>
+            <span> Swapnil Jain</span> <span>Swapnil Jain</span>
+            <span> Swapnil Jain</span> <span>Swapnil Jain</span>
           </Marquee>
         </div>
         <div
@@ -84,6 +90,13 @@ const Loading = ({ percent }: { percent: number }) => {
               <span>Welcome</span>
             </div>
           </div>
+        </div>
+        <div className="loading-meta">
+          <span>HIGH-THROUGHPUT SYSTEMS</span>
+          <span className="loading-progress-line">
+            <span style={{ width: `${Math.min(percent, 100)}%` }}></span>
+          </span>
+          <span>{Math.min(percent, 100).toString().padStart(3, "0")} / 100</span>
         </div>
       </div>
     </>

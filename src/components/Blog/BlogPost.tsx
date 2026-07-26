@@ -14,7 +14,7 @@ const BlogPostPage = () => {
   useEffect(() => {
     if (!post) return;
 
-    document.title = `${post.title} — Swapnil Dahiphale`;
+    document.title = `${post.title} — Swapnil Jain`;
 
     const setMeta = (attr: string, key: string, content: string) => {
       let el = document.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement;
@@ -69,27 +69,27 @@ const BlogPostPage = () => {
       articleBody: plainText.slice(0, 500),
       author: {
         "@type": "Person",
-        name: "Swapnil Dahiphale",
+        name: "Swapnil Jain",
         url: "https://swapnil.one",
       },
       publisher: {
         "@type": "Person",
-        name: "Swapnil Dahiphale",
+        name: "Swapnil Jain",
       },
       mainEntityOfPage: canonicalUrl,
     });
     document.head.appendChild(script);
 
     return () => {
-      document.title = "Swapnil Dahiphale — SRE & AI Engineer";
+      document.title = "Swapnil Jain — Software Engineer";
       const el = document.getElementById("blog-jsonld");
       if (el) el.remove();
       document.querySelector('meta[property="article:published_time"]')?.remove();
-      setMeta("name", "description", "SRE & AI Engineer building resilient systems at scale. Creator of OpenSRE — the open-source SRE knowledge platform.");
+      setMeta("name", "description", "Swapnil Jain builds high-throughput distributed systems, agentic AI systems, and cloud infrastructure.");
       setLink("canonical", "https://swapnil.one");
       setMeta("property", "og:type", "website");
-      setMeta("property", "og:title", "Swapnil Dahiphale — SRE & AI Engineer");
-      setMeta("property", "og:description", "SRE & AI Engineer building resilient systems at scale. Creator of OpenSRE — the open-source SRE knowledge platform.");
+      setMeta("property", "og:title", "Swapnil Jain — Software Engineer");
+      setMeta("property", "og:description", "High-throughput distributed systems, streaming pipelines, agentic AI, and cloud infrastructure.");
       setMeta("property", "og:url", "https://swapnil.one");
     };
   }, [post, slug]);

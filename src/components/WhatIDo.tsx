@@ -88,23 +88,11 @@ const WhatIDo = () => {
 
             <div className="what-content-in">
               <h3>BUILD &amp; SCALE</h3>
-              <h4>Cloud Infrastructure at Scale</h4>
+              <h4>High-Throughput Distributed Systems</h4>
               <p>
-                Orchestrate 100+ microservices. Ship via CI/CD. Observe
-                everything. Sleep at night.
+                Build recommendation and personalization platforms delivering
+                low-latency recommendations for 70 million Chase customers.
               </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">AWS</div>
-                <div className="what-tags">Kubernetes</div>
-                <div className="what-tags">Terraform</div>
-                <div className="what-tags">Prometheus</div>
-                <div className="what-tags">Grafana</div>
-                <div className="what-tags">ELK</div>
-                <div className="what-tags">Docker</div>
-                <div className="what-tags">CI/CD</div>
-                <div className="what-tags">Python</div>
-              </div>
               <div className="what-arrow"></div>
             </div>
           </div>
@@ -127,21 +115,12 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>AGENTIC AI INFRASTRUCTURE</h3>
-              <h4>Voice AI Platform at VMO India</h4>
+              <h3>AI &amp; AGENTIC SYSTEMS</h3>
+              <h4>Production AI Agents</h4>
               <p>
-                Build the infra. Orchestrate the agents. Power real
-                conversations. Keep voice AI alive in production.
+                P&amp;I Agent, a multi-agent system powered by a fine-tuned SLM
+                deployed on a Ray cluster.
               </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">Voice AI</div>
-                <div className="what-tags">Agent Infra</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">Kubernetes</div>
-                <div className="what-tags">LangGraph</div>
-                <div className="what-tags">Observability</div>
-              </div>
               <div className="what-arrow"></div>
             </div>
           </div>
@@ -164,21 +143,12 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>OPEN SOURCE AI SRE</h3>
-              <h4>OpenSRE.in — Autonomous Incident Investigation</h4>
+              <h3>PLATFORM ENGINEER</h3>
+              <h4>Reliable Cloud Infrastructure</h4>
               <p>
-                Detect the incident. Investigate the graph. Find the root cause.
-                Let the agent file the postmortem.
+                Build resilient, observable production platforms across AWS,
+                Kubernetes, and Terraform.
               </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">OpenSRE</div>
-                <div className="what-tags">LangGraph</div>
-                <div className="what-tags">Neo4j</div>
-                <div className="what-tags">RAG</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">AI Agents</div>
-              </div>
               <div className="what-arrow"></div>
             </div>
           </div>

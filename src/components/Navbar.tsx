@@ -44,16 +44,16 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/" className="navbar-title" data-cursor="disable">
-          SD
+          SJ
         </a>
         <a
-          href="https://www.linkedin.com/in/swapnil2233/"
+          href="https://www.linkedin.com/in/swapnijain27012000/"
           className="navbar-connect"
           data-cursor="disable"
           target="_blank"
           rel="noreferrer"
         >
-          linkedin.com/in/swapnil2233
+          linkedin.com/in/swapnijain27012000
         </a>
         <ul>
           <li>

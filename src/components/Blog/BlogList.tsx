@@ -12,7 +12,7 @@ const BlogList = () => {
       </Link>
       <div className="blog-header">
         <h1>Blog</h1>
-        <p>Thoughts on SRE, AI engineering, and building OpenSRE.</p>
+        <p>Thoughts on distributed systems, AI engineering, and cloud platforms.</p>
       </div>
       {posts.map((post) => (
         <Link

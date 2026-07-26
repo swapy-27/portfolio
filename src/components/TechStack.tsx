@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { useRef, useMemo, useState, useEffect } from "react";
+import { useRef, useMemo, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useTexture, Billboard, Html, Environment } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
@@ -15,8 +15,6 @@ const LOGO_URLS = [
   "/images/langgraph.png",
   "/images/docker.png",
   "/images/prometheus.png",
-  "/images/ansible.png",
-  "/images/argocd.png",
   "/images/gcp.png",
   "/images/jenkins.png",
 ];
@@ -24,7 +22,7 @@ const LOGO_URLS = [
 const TECH_NAMES = [
   "AWS", "Kubernetes", "Terraform", "Python",
   "Grafana", "Elastic", "Agentic AI", "LangGraph",
-  "Docker", "Prometheus", "Ansible", "Argo CD",
+  "Docker", "Prometheus",
   "GCP", "Jenkins",
 ];
 
@@ -35,9 +33,9 @@ const CONFIG = {
   separationRadius: 4.5,
   centerAvoidance: 0.008,
   damping: 0.8,
-  driftSpeed: 0.004,
+  driftSpeed: 0.012,
   driftReassignThreshold: 1.5,
-  maxSpeed: 0.05,
+  maxSpeed: 0.08,
   connectionDistance: 5.5,
   connectionOpacity: 0.0225,
   logoSize: 1.3,
@@ -351,21 +349,10 @@ function ConstellationLines({
 }
 
 const TechStack = () => {
-  const [isActive, setIsActive] = useState(false);
+  const isActive = true;
   const mouseWorld = useRef(new THREE.Vector3());
   const mouseActive = useRef(false);
   const particles = useParticles(LOGO_URLS.length);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const workEl = document.getElementById("work");
-      if (!workEl) return;
-      const threshold = workEl.getBoundingClientRect().top;
-      setIsActive(window.scrollY > threshold);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <div
