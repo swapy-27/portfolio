@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { getAllBlogPosts } from "../../data/blogPosts";
 import "../styles/Blog.css";
 
