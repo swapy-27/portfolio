@@ -1,8 +1,6 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LoadingProvider } from "./context/LoadingProvider";
-import BlogList from "./components/Blog/BlogList";
-import BlogPostPage from "./components/Blog/BlogPost";
 import "./App.css";
 
 const CharacterModel = lazy(() => import("./components/Character"));
@@ -12,8 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/:slug" element={<BlogPostPage />} />
+        {/* Blog is temporarily disabled; every route falls back to the portfolio home. */}
         <Route
           path="*"
           element={

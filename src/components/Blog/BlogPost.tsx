@@ -36,7 +36,7 @@ const BlogPostPage = () => {
       el.setAttribute("href", href);
     };
 
-    const canonicalUrl = `https://swapnil.one/blog/${post.slug}`;
+    const canonicalUrl = `${window.location.origin}/blog/${post.slug}`;
 
     setMeta("name", "description", post.description);
     setLink("canonical", canonicalUrl);
@@ -70,7 +70,7 @@ const BlogPostPage = () => {
       author: {
         "@type": "Person",
         name: "Swapnil Jain",
-        url: "https://swapnil.one",
+        url: window.location.origin,
       },
       publisher: {
         "@type": "Person",
@@ -86,19 +86,19 @@ const BlogPostPage = () => {
       if (el) el.remove();
       document.querySelector('meta[property="article:published_time"]')?.remove();
       setMeta("name", "description", "Swapnil Jain builds high-throughput distributed systems, agentic AI systems, and cloud infrastructure.");
-      setLink("canonical", "https://swapnil.one");
+      setLink("canonical", window.location.origin);
       setMeta("property", "og:type", "website");
       setMeta("property", "og:title", "Swapnil Jain — Software Engineer");
       setMeta("property", "og:description", "High-throughput distributed systems, streaming pipelines, agentic AI, and cloud infrastructure.");
-      setMeta("property", "og:url", "https://swapnil.one");
+      setMeta("property", "og:url", window.location.origin);
     };
   }, [post, slug]);
 
   if (!post) {
     return (
       <div className="blog-container">
-        <Link to="/blog" className="blog-back-link">
-          &larr; Back to Blog
+        <Link to="/" className="blog-back-link">
+          &larr; Back to Portfolio
         </Link>
         <h1>Post not found</h1>
       </div>
@@ -107,8 +107,8 @@ const BlogPostPage = () => {
 
   return (
     <div className="blog-container">
-      <Link to="/blog" className="blog-back-link">
-        &larr; Back to Blog
+      <Link to="/" className="blog-back-link">
+        &larr; Back to Portfolio
       </Link>
       <article className="blog-post-full">
         <h1>{post.title}</h1>
