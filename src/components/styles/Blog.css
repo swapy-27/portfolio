@@ -9,7 +9,9 @@ body:has(.blog-container) {
   margin: 0 auto;
   padding: 120px 0 80px;
   min-height: 100vh;
-  color: #eae5ec;
+  color: var(--textColor);
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .blog-header {
@@ -148,6 +150,41 @@ body:has(.blog-container) {
   padding: 2px 6px;
   border-radius: 3px;
   font-size: 0.9em;
+}
+
+.blog-post-full .blog-post-content .table-wrap {
+  overflow-x: auto;
+  margin: 0 0 24px;
+}
+
+.blog-post-full .blog-post-content table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.blog-post-full .blog-post-content th {
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+.blog-post-full .blog-post-content td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-post-full .blog-post-content tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .blog-linkedin-link {

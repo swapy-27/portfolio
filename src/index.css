@@ -8,7 +8,7 @@
   line-height: 1.5;
   scroll-behavior: smooth;
   color-scheme: light dark;
-  color: #eae5ec;
+  color: #efe8e0;
   background-color: var(--backgroundColor);
 
   font-synthesis: none;
@@ -18,8 +18,12 @@
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  --accentColor: #5eead4;
-  --backgroundColor: #0a0e17;
+  --accentColor: #c98f5e;
+  --accentBright: #e8b98a;
+  --accentDeep: #8a5a36;
+  --accentGlow: #f2d2b0;
+  --textColor: #efe8e0;
+  --backgroundColor: #0a0807;
   --vh: 100vh;
   --vh: 100svh;
 }
@@ -66,7 +70,7 @@ main {
 body {
   margin: 0;
   height: auto;
-  background-color: #050810;
+  background-color: var(--backgroundColor);
   flex-grow: 1;
   --cWidth: calc(100% - 30px);
   --cMaxWidth: 1920px;

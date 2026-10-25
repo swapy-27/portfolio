@@ -50,7 +50,7 @@ function formatDate(dateStr) {
 }
 
 const sharedStyles = `
-  :root { --accent: #b08eff; --bg: #0a0612; --fg: #eae5ec; }
+  :root { --accent: #c98f5e; --bg: #0a0807; --fg: #efe8e0; }
   * { box-sizing: border-box; }
   body {
     margin: 0;
@@ -82,6 +82,11 @@ const sharedStyles = `
   article .content li { margin-bottom: 8px; }
   article .content pre { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 16px; overflow-x: auto; font-size: 14px; line-height: 1.6; margin: 0 0 16px; }
   article .content code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+  article .content .table-wrap { overflow-x: auto; margin: 0 0 16px; }
+  article .content table { width: 100%; min-width: 480px; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+  article .content th { text-align: left; font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.6; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.2); white-space: nowrap; }
+  article .content td { padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.08); font-variant-numeric: tabular-nums; }
+  article .content tbody tr:last-child td { border-bottom: none; }
   .linkedin-link { display: inline-block; margin-top: 40px; padding: 12px 24px; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; color: var(--accent); text-decoration: none; font-size: 14px; }
   .linkedin-link:hover { border-color: var(--accent); }
   footer.site-footer { max-width: 800px; margin: 80px auto 0; padding: 32px 24px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; gap: 16px 24px; font-size: 14px; opacity: 0.7; }

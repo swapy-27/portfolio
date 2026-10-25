@@ -3,7 +3,7 @@
   width: 100vw;
   height: var(--vh);
   /* background-image: linear-gradient(#cbb1ff, #d8c4ff); */
-  background-color: #05070b;
+  background-color: var(--backgroundColor);
   z-index: 999999999;
   display: flex;
   place-items: center;
@@ -15,16 +15,16 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 45%, rgba(34, 211, 238, 0.12), transparent 32%),
-    radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.12), transparent 24%);
+  background: radial-gradient(circle at 50% 45%, rgba(201, 143, 94, 0.12), transparent 32%),
+    radial-gradient(circle at 80% 20%, rgba(138, 90, 54, 0.14), transparent 24%);
 }
 
 .loading-grid {
   position: absolute;
   inset: 0;
   opacity: 0.25;
-  background-image: linear-gradient(rgba(34, 211, 238, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 211, 238, 0.08) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(201, 143, 94, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 143, 94, 0.08) 1px, transparent 1px);
   background-size: 54px 54px;
   mask-image: radial-gradient(circle at center, black, transparent 72%);
   animation: loadingGridDrift 12s linear infinite;
@@ -34,7 +34,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  border: 1px solid rgba(34, 211, 238, 0.18);
+  border: 1px solid rgba(201, 143, 94, 0.18);
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(-18deg);
   pointer-events: none;
@@ -49,7 +49,7 @@
 .loading-orbit-two {
   width: min(48vw, 460px);
   height: min(78vw, 740px);
-  border-color: rgba(168, 85, 247, 0.2);
+  border-color: rgba(232, 185, 138, 0.2);
   transform: translate(-50%, -50%) rotate(62deg);
   animation: loadingOrbitReverse 14s linear infinite;
 }
@@ -90,8 +90,8 @@
 .loading-progress-line span {
   display: block;
   height: 100%;
-  background: #22d3ee;
-  box-shadow: 0 0 12px #22d3ee;
+  background: var(--accentColor);
+  box-shadow: 0 0 12px var(--accentColor);
   transition: width 0.2s ease;
 }
 
@@ -111,7 +111,7 @@
   padding: 20px 50px;
   border-radius: 100px;
   background-color: rgba(5, 7, 11, 0.92);
-  border: 1px solid rgba(34, 211, 238, 0.45);
+  border: 1px solid rgba(201, 143, 94, 0.45);
   overflow: hidden;
   font-size: 18px;
   font-weight: 500;
@@ -121,7 +121,7 @@
 
 .loading-button::before {
   content: "";
-  background-color: #ffffff;
+  background-color: var(--accentGlow);
   top: var(--mouse-y);
   left: var(--mouse-x);
   border-radius: 50%;
@@ -154,7 +154,7 @@
   overflow: hidden;
   transition: 0.8s ease-in-out;
   transition-delay: 0.2s;
-  box-shadow: 0 0 40px rgba(34, 211, 238, 0.12), 0px 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px rgba(201, 143, 94, 0.12), 0px 15px 15px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +175,7 @@
 }
 
 .loading-hover {
-  background-color: #2dd4bf;
+  background-color: var(--accentColor);
   width: 250px;
   height: 120px;
   position: absolute;
@@ -402,7 +402,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #2dd4bf;
+  background-color: var(--accentColor);
   animation: ball25 7s infinite;
   transform: translateY(10px);
   animation-timing-function: cubic-bezier(0.3, 1.18, 0.63, 1.28);
