@@ -8,9 +8,7 @@ import { join } from "path";
 const SITE_URL = "https://www.swapniljain.me";
 const SOCIAL = {
   linkedin: "https://www.linkedin.com/in/swapnil2233/",
-  x: "https://x.com/Swapnil2233",
   github: "https://github.com/swapy-27",
-  opensre: "https://opensre.in",
 };
 
 function escapeHtml(str) {
@@ -107,9 +105,7 @@ function siteFooter() {
     <a href="${SITE_URL}/">Home</a>
     <a href="${SITE_URL}/blog">Blog</a>
     <a href="${SOCIAL.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="${SOCIAL.x}" target="_blank" rel="noopener">X</a>
     <a href="${SOCIAL.github}" target="_blank" rel="noopener">GitHub</a>
-    <a href="${SOCIAL.opensre}" target="_blank" rel="noopener">OpenSRE</a>
   </footer>`;
 }
 
