@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://swapnil.one/sitemap.xml
+Sitemap: https://www.swapniljain.me/sitemap.xml

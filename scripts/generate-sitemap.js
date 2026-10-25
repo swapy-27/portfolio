@@ -5,7 +5,7 @@ const today = new Date().toISOString().slice(0, 10);
 
 const urls = [
   `  <url>
-    <loc>https://swapnil.one</loc>
+    <loc>https://www.swapniljain.me</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

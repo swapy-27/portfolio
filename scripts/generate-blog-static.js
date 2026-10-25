@@ -5,7 +5,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { join } from "path";
 
-const SITE_URL = "https://swapnil.one";
+const SITE_URL = "https://www.swapniljain.me";
 const SOCIAL = {
   linkedin: "https://www.linkedin.com/in/swapnil2233/",
   x: "https://x.com/Swapnil2233",
